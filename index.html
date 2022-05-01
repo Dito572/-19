@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lecture 19</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="open-modal" type="button">Open modal</button>
+<div class="modal my-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            This is modal title
+            <button class="modal-close">X</button>
+        </div>
+        <div class="modal-body">
+            <!-- This is modal body -->
+            <form id="user-login-form" method="post" action="/" novalidate>
+                <div class="form-field">
+                    <label>
+                        <input name="email" type="email" placeholder="Enter Email">
+                        <p class="error-message"></p>
+                    </label>
+                </div>
+                 <div class="form-field">
+                     <label>
+                         <input name="password" type="password" placeholder="Enter Password">
+                         <p class="error-message"></p>
+                     </label>
+                  <div class="form-field">
+                    <label>
+                        <input name="personal_number" type="number" placeholder="Enter personal number">
+                        <p class="error-message"></p>
+                      </label>  
+                  </div>   
+                  <div class="form-field">
+                    <label>
+                      <input name="mobile_number" type="number" placeholder="Enter mobile_number"> 
+                      <p class="error-message"></p>
+                    </label>
+                  </div>
+                  <div class="form-field">
+                    <label>
+                      <input name="position" type="text" placeholder="Enter position">
+                      <p class="error-message"></p>
+                    </label>
+                  </div>
+                 </div>
+                  <button type="submit">Login</button>
+              </form>
+        </div>
+    </div>
+</div>
+<div class="modal my-modal-2">
+    <div class="modal-content">
+        <div class="modal-header">
+            <!-- This is modal title -->
+            <button class="modal-close">X</button>
+        </div>
+        <div class="modal-body">
+            <!-- This is modal body -->
+        </div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
